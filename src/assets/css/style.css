@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:opsz@6..12&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,500;1,700&display=swap');
+
+.primary-text{
+  font-family: 'Montserrat', sans-serif;
+}
+.primary-color{
+  color: rgba(240, 103, 17, 1);
+}
+.secondary-color{
+  color: rgba(0, 81, 161, 1);
+  ;
+}
+
+.custom-navbar {
+    width: 1440px;
+    height: 96px;
+    padding: 0px 112px;
+    background-color: #ECF5FF;
+    box-shadow: rgba(0, 20, 38, 0.12);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: left;
+    color: rgba(0, 0, 0, 1);
+    gap: 32px;
+  }
+  .navbar-logo {
+    width: 53.29px;
+    height: 80px;
+    gap: 0px;
+    opacity: 0px;
+   
+  }
+
+  .hero-container {
+    position: relative;
+    height: 100vh; /* Adjust based on your design */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .hero-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: 1440px;
+    height: 3447px;
+    transform: translate(-50%, -50%);
+    z-index: -1; /* Ensures the video stays behind the content */
+    object-fit: cover; /* Ensures the video covers the entire section */
+    gap: 0px;
+    opacity: 0px;
+
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: white;
+    top: 35%;
+    transform: translateY(-50%);
+    gap: 0px;
+    opacity: 0px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 72px;
+    letter-spacing: -0.02em;
+    width: 696px;
+    height: 144px;
+    
+  }
+
+  .hero-content h6{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: center;
+
+  }
+  .FindButton1{
+    width: 210px;
+    height: 56px;
+    padding: 16px 24px 16px 24px;
+    gap: 12px;
+    border-radius: 4px 0px 0px 0px;
+    opacity: 0px;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+
+
+  }
+  .FindButton2{
+    width: 210px;
+    height: 56px;
+    padding: 16px 24px 16px 24px;
+    gap: 12px;
+    font-family: Montserrat;
+    border: none;
+    background: rgba(236, 245, 255, 1);
+
+
+  }
+  .find2icon{
+    size: 20px;
+  }
+  .find1icon{
+    size: 20px;
+  }
+  .pic1{
+    position: absolute;
+    z-index: -1;
+    border-radius: 8px ;
+    
+
+  }
+  .pic2{
+    position: relative;
+    z-index: 1;
+    top: 264px;
+    left: 104px;
+    gap: 0px;
+    border-radius: 8px ;
+    opacity: 0px;
+
+
+  }
+  .pic5{
+    position: absolute;
+    z-index: -1;
+    border-radius: 8px ;
+    margin-top: 100px;
+    gap: 0px;
+    opacity: 0px;
+
+    
+
+  }
+  .pic6{
+    position: relative;
+    top: -6px;
+    left: 104px;
+    gap: 0px;
+    border-radius: 8px;
+    opacity: 0px;
+    
+
+
+  }
+  .line-9{
+    width: 51px;
+    top: 14px;
+    gap: 0px;
+    border: 4px 0px 0px 0px;
+    border: 2px solid rgba(240, 103, 17, 1);
+    color: rgba(240, 103, 17, 1);
+   
+
+  }
+  .property-text{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21.6px;
+    text-align: left;
+    color: rgba(240, 103, 17, 1);
+
+  }
+  .property-p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: rgba(17, 24, 39, 1);
+    shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+  }
+  .property-p-sub{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    color: rgba(102, 112, 133, 1);
+    shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+  }
+
+  .property-details-container{
+    width: 100%;
+    height: 504px;
+    
+  }
+  .card-m{
+   border: 0px;
+
+  }
+  .card-h{
+    font-family: Montserrat;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: -0.01em;
+    text-align: center;
+
+  }
+ .card-d{
+  height:200px;
+  padding: 24px;
+  gap: 20px;
+  opacity: 0px;
+  background: rgba(236, 245, 255, 1);
+
+ }
+ .card-t{
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  color: rgba(17, 24, 39, 1);
+  
+ }
+ .card-p{
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+
+ }
+ .footer-text {
+  font-family: Montserrat;
+  color: grey;
+  text-decoration: none;
+ }
+ .footer-brand{
+  font-family: Montserrat;
+  color: grey;
+ }
+ .footer-main{
+  background-color: rgba(236, 245, 255, 1);
+  padding: 4px;
+ }
+
+.img-fluid {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+/* Wrapper for select input */
+.custom-select-wrapper {
+  position: relative;
+}
+
+.custom-select-arrow {
+  appearance: none; /* Removes default arrow */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding-right: 30px; /* Make space for the custom arrow */
+  background: none;
+}
+
+/* Custom arrow styling */
+.custom-select-wrapper::after {
+  content: '▼'; /* Or use a different arrow symbol */
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: rgba(240, 103, 17, 1); /* Color of the arrow */
+  font-size: 12px; /* Adjust size as needed */
+}
+
+.newflat{
+  width: 250px;
+  height: 185px;
+  padding: 10px;
+  gap: 32px;
+  opacity: 0px;
+  border: none;
+  background-color: rgba(253, 240, 231, 1);
+
+}
+.newflat2{
+  width: 250px;
+  height: 185px;
+  padding: 10px;
+  gap: 32px;
+  opacity: 0px;
+  border: none;
+  background-color: rgba(236, 245, 255, 1);
+  ;
+
+}
+.Propertyslide-head-p{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 48px;
+  color: rgba(17, 24, 39, 1);
+  ;
+
+}
+.Propertyslide-link{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: left;
+  color: rgba(0, 81, 161, 1);
+  
+
+}
+.ProductCart1-main{
+  width:  100%;
+  height: 388px;
+  opacity: 0px;
+  background-color: rgba(249, 250, 251, 1);
+}
+.ProductCart1-main2{
+  width:  100%;
+  height: 188px;
+  padding: 16px;
+  opacity: 0px;
+  
+
+
+}
+.ProductCart-image{
+  width:  100%;
+  height: 200px; 
+  
+
+}
+.badge {
+  background: rgba(197, 226, 255, 1)!important;
+  color: rgba(0, 37, 74, 1)!important;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  line-height: 16px !important;
+}
+.rectangle {
+  width: 8px;
+  height: 8px;
+  opacity: 0px;
+  color: rgba(238, 102, 17, 1);
+  ;
+}
+.propertycart-text2{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+
+}
+.productcart-p1{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: -0.01em;
+  text-align: left;
+  color: #111827;
+
+
+}
+.productcart-p2{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #6B7280;
+
+
+}
+.productcart-Budget{
+  font-family:'Montserrat', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: -0.01em;
+  text-align: left;
+  color: #111827;
+
+
+}
