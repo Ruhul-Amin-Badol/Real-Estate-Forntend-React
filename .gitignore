@@ -23,3 +23,5 @@ yarn-debug.log*
 yarn-error.log*
 # Ignore the entire video folder
 src/assets/video/
+# Ignore all video files in src/assets/video
+src/assets/video/*.{mp4,mov,avi,mkv}
