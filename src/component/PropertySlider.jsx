@@ -16,9 +16,8 @@ const PropertySlider = () => {
       </div>
       {/* Property slider content can go here */}
       <div className='row'>
-        <div className="col-4"><ProductCart1/></div>
-        <div className="col-4"><ProductCart1/></div>
-        <div className="col-4"><ProductCart1/></div> 
+        <div className="col-12 "><ProductCart1/></div>
+     
       </div>
     </div>
   );
