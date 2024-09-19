@@ -1,5 +1,7 @@
 import React from "react";
 import Productcart1 from "../assets/images/ProductCart1.jpg";
+import Productcart2 from "../assets/images/luxury.jpg";
+import Productcart3 from "../assets/images/prductcart3.jpg";
 import { PiRectangleFill } from "react-icons/pi";
 import { CiLocationOn } from "react-icons/ci";
 import { BiSolidImage } from "react-icons/bi";
@@ -16,7 +18,7 @@ const ProductCart1 = () => {
       location: "Meadowshire Park, Greenfield, USA",
       price: "$250000",
       imageCount: 20,
-      image: Productcart1,
+      image: Productcart3,
     },
     {
       id: 2,
@@ -32,7 +34,7 @@ const ProductCart1 = () => {
       location: "Downtown, Greenfield, USA",
       price: "$40000",
       imageCount: 25,
-      image: Productcart1,
+      image: Productcart2,
     },
     
   ];
@@ -102,7 +104,7 @@ const PrevArrow = (props) => {
   return (
     <div
       className={className}
-      style={{ ...style, display: "block", left: "10px", zIndex: 1 }}
+      style={{ ...style, display: "block", left: "0px", zIndex: 1 }}
       onClick={onClick}
     />
   );

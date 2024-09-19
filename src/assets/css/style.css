@@ -47,13 +47,14 @@
     left: 50%;
     min-width: 100%;
     min-height: 100%;
-    width: 1440px;
-    height: 3447px;
+    width: 100%;
+    height: auto;
     transform: translate(-50%, -50%);
     z-index: -1; /* Ensures the video stays behind the content */
     object-fit: cover; /* Ensures the video covers the entire section */
     gap: 0px;
     opacity: 0px;
+    zoom: 5%;
 
   }
   
@@ -434,11 +435,13 @@
   color: rgba(240, 103, 17, 1); 
 }
 
-
-.slick-prev::before, .slick-next::before {
-  font-size: 30px;
-  color: black;
+/* for slide */
+.slick-next:before , .slick-prev:before {
+  font-size: 35px !important;
+  color: #5490CB !important;
 }
+
 .slick-slide >div{
   margin: 10px;
 }
+/* for slide end*/
