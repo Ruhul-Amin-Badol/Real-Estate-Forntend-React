@@ -252,6 +252,9 @@
   background-color: rgba(236, 245, 255, 1);
   padding: 4px;
  }
+ .footer-icon{
+  font-size: 12px;
+ }
 
 .img-fluid {
   width: 100%;
@@ -445,3 +448,88 @@
   margin: 10px;
 }
 /* for slide end*/
+svg {
+  height: 2em;
+  width: 1.3em;
+  
+}
+
+
+/*for testimonial*/
+.testimonials-section {
+  padding: 92px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.testimonial-card {
+  background-color: #f0f7ff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+}
+
+.testimonial-content {
+  text-align: center;
+}
+
+.rating-stars {
+  margin-bottom: 15px;
+}
+
+.star-icon {
+  color: #f9d71c;
+}
+
+.empty-star {
+  color: #e0e0e0;
+}
+
+.testimonial-feedback {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.testimonial-profile {
+  align-items: center;
+  margin-top: 20px;
+}
+
+.testimonial-img {
+  width: 50px;
+  height: 50px;
+  align-items: center;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.testimonial-name {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.testimonial-position {
+  color: gray;
+}
+.slick-slide img{
+  display: inline !important;
+}
+
+/* Add the dot customization */
+.slick-dots li button::before {
+  font-size: 10px;
+  color: gray;
+  opacity: 0.75;
+  transition: all 0.3s ease;
+}
+
+.slick-dots li.slick-active button::before {
+  font-size: 14px;
+  color: #EE6611 !important;
+  opacity: 1;
+}

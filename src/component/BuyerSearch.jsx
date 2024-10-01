@@ -6,6 +6,9 @@ import { AiOutlineDollarCircle } from "react-icons/ai";
 import NewFlatP from './NewFlatP';
 import NewFlatP2 from './NewFlatP2';
 import PropertySlider from './PropertySlider';
+import NewListProduct from './NewListProduct';
+import Testimonials from './Testimonials';
+import Footer from "./footer";
 
 const BuyerSearch = () => {
   return (
@@ -157,7 +160,11 @@ const BuyerSearch = () => {
         </div> 
         <div>
           <PropertySlider/>
+          <NewListProduct/>
+          <Testimonials/>
+          
         </div>
+        <Footer />
       </div>
     </>
   );

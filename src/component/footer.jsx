@@ -98,7 +98,7 @@ const footer = () => {
       <a href="https://twitter.com" className="footer-icon mx-2">
         <FaTwitter />
       </a>
-      <a href="https://instagram.com" className="footer-icon">
+      <a href="https://instagram.com" className="footer-icon mx-2">
         <FaInstagram />
       </a>
       <a href="https://linkedin.com" className="footer-icon mx-2">
