@@ -1,18 +1,28 @@
-import React from 'react';
-import hero1 from '../assets/images/hero-pic.jpg';
+import React, { useState } from 'react';
+import hero1 from '../../assets/images/hero-pic.jpg';
 import { CiSearch, CiLocationOn } from "react-icons/ci";
 import { FcHome } from "react-icons/fc";
 import { AiOutlineDollarCircle } from "react-icons/ai";
-import NewFlatP from './NewFlatP';
-import NewFlatP2 from './NewFlatP2';
-import PropertySlider from './PropertySlider';
-import NewListProduct from './NewListProduct';
-import Testimonials from './Testimonials';
-import Footer from "./footer";
+import NewFlatP from '../../component/NewFlatP';
+import NewFlatP2 from '../../component/NewFlatP2';
+import PropertySlider from '../../component/PropertySlider';
+import NewListProduct from '../../component/NewListProduct';
+import Testimonials from '../../component/Testimonials';
+import Footer from "../../component/footer";
+import BuyerSearchResult from '../../component/BuyerSearchResult';
+
 
 const BuyerSearch = () => {
+  const [showResults, setShowResults] = useState(false); // State to show/hide results
+
+  // Function to handle button click
+  const handleSearchClick = () => {
+    setShowResults(true); // Show results when button is clicked
+  };
   return (
     <>
+    {!showResults ? (
+        // Render this part if showResults is false
       <div>
         <div className="row">
           <div className="col-12">
@@ -140,7 +150,9 @@ const BuyerSearch = () => {
                   </div>
                 </div>
 
-                <a href="#" className="btn w-100 mt-3 text-light" style={{backgroundColor:'#0059B1'}}>
+                <a href="#" className="btn w-100 mt-3 text-light"
+                 onClick={handleSearchClick}
+                 style={{backgroundColor:'#0059B1'}}>
                   <span className="findicon">
                     <CiSearch size={25} />
                   </span>
@@ -166,6 +178,11 @@ const BuyerSearch = () => {
         </div>
         <Footer />
       </div>
+
+       ) : (
+        // Render this part if showResults is true
+        <BuyerSearchResult/>
+        )}
     </>
   );
 };

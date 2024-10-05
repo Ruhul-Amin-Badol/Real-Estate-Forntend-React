@@ -447,6 +447,20 @@
 .slick-slide >div{
   margin: 10px;
 }
+
+/* Add the dot customization */
+.slick-dots li button::before {
+  font-size: 10px;
+  color: gray;
+  opacity: 0.75;
+  transition: all 0.3s ease;
+}
+
+.slick-dots li.slick-active button::before {
+  font-size: 14px;
+  color: #EE6611 !important;
+  opacity: 1;
+}
 /* for slide end*/
 svg {
   height: 2em;
@@ -520,16 +534,40 @@ svg {
   display: inline !important;
 }
 
-/* Add the dot customization */
-.slick-dots li button::before {
-  font-size: 10px;
-  color: gray;
-  opacity: 0.75;
-  transition: all 0.3s ease;
+.buyerresultbutton{
+width: 176px;
+height: 44px;
+padding: 10px ;
+gap: 10px;
+border-radius: 4px;
+opacity: 0px;
+background-color: #0059B1;
+;
+}
+.result-text{
+font-size: 24px;
+font-weight: 500;
+line-height: 32px;
+text-align: left;
+
+}
+.result-search-main{
+  width: 800px;
+  height: 1,344px;
+  top: 296px;
+  left: 112px;
+  gap: 24px;
+  opacity: 0px;
+  
+
+}
+.result-search-card{
+  height: 232px;
+  padding: 24px ;
+  border-radius: 8px ;
+  opacity: 0px;
+  background-color: #959595;
+  
+
 }
 
-.slick-dots li.slick-active button::before {
-  font-size: 14px;
-  color: #EE6611 !important;
-  opacity: 1;
-}

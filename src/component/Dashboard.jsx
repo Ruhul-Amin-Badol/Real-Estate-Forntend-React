@@ -1,6 +1,6 @@
 import React from 'react'
 import Navber from './Navber'
-import BuyerSearch from './BuyerSearch'
+import BuyerSearch from '../assets/pages/BuyerSearch'
 
 const Dashboard = () => {
   return (
