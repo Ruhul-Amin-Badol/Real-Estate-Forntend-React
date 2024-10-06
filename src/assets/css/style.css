@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:opsz@6..12&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,500;1,700&display=swap');
 
+
 .primary-text{
   font-family: 'Montserrat', sans-serif;
 }
@@ -566,8 +567,88 @@ text-align: left;
   padding: 24px ;
   border-radius: 8px ;
   opacity: 0px;
-  background-color: #959595;
+  background-color: #F9FAFB;
+  ;
   
 
+}
+.result-search-card-p1{
+font-size: 18px;
+font-weight: 600;
+line-height: 24px;
+letter-spacing: -0.01em;
+text-align: left;
+
+}
+.result-search-card-p2{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  color: #606060;
+}
+.result-search-card-p3{
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: -0.01em;
+  text-align: left;
+  color: #010101;
+  
+}
+.result-search-card-button{
+  width: 135px;
+  height: 40px;
+  padding: 8px 16px 8px 16px;
+  gap: 12px;
+  border-radius: 4px;
+  border: 1px solid #000000;
+
+}
+.result-search-card-p4{
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+  color: #010101;
+}
+.result-search-card-line{
+  border: 1.5px solid #E3E3E3;
+  width: 427px;
+  height: 0px;
+  gap: 0px;
+  opacity: 0px;
+  margin-left: 10px;
+  align-items: center;
+
+}
+.result-search-card-icon1{
+  width: 40px;
+  height: 40px;
+  gap: 0px;
+  border-radius: 4px;
+  opacity: 0px;
+  background-color: rgba(240, 103, 17, 1); 
+  color: #f0f7ff;
+  
+
+}
+.result-search-card-icon-p1{
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+  color: #303030;
+  font-family: 'Montserrat', sans-serif;
+}
+.result-search-card-icon-p2{
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: left;
+  color: #535353;
+  font-family: 'Montserrat', sans-serif;
+
+  
 }
 

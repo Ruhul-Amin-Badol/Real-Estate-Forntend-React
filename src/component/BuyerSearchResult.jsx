@@ -1,7 +1,10 @@
 import React from "react";
-import Navber from "./Navber";
 import Footer from "./footer";
 import result from "../assets/images/result.jpg"
+import { CiLocationOn } from "react-icons/ci";
+import { MdOutlineHorizontalRule } from "react-icons/md";
+import { PiSpinnerGap } from "react-icons/pi";
+import { RiDragMoveLine } from "react-icons/ri";
 
 import Testimonials from "./Testimonials";
 
@@ -36,24 +39,45 @@ const BuyerSearchResult = () => {
                 <img src={result} alt="hero"  />
             </div>
             <div className="col-9">
-                <div className="d-flex primary-text">
+                <div className="d-flex primary-text ">
                     <div>
-                        <p>3 BHK Builder Floor for Sale in Site Ram Bazar New Delhi</p>
-                        <p>Meadowshire Park, Greenfield, USA</p>
+                        <p className="result-search-card-p1">3 BHK Builder Floor for Sale in Site Ram Bazar New Delhi</p>
+                        <p className="result-search-card-p2"><CiLocationOn style={{ color: '#f06711' }} />Meadowshire Park, Greenfield, USA</p>
                     </div>
                     <div>
-                        <p className="primary-text fw-blod">$300000</p>
-                         <button className="btn btn-info">
+                        <p className="primary-text result-search-card-p3">$300000</p>
+                         <button className=" result-search-card-button">
                             Bit Property
                          </button>
                     </div>
                 </div>
                 <div >
-                    <div>Property details</div>
                     <div className="d-flex">
-                        <div>1</div>
-                        <div>2</div>
-                        <div>3</div>
+                        <div className="result-search-card-p4">Property details</div>
+                        <div><MdOutlineHorizontalRule  className="result-search-card-line"/></div>
+                    </div>
+                    <div className="d-flex mt-2 row">
+                        <div className="d-flex col-4">
+                          <div><PiSpinnerGap className="result-search-card-icon1"/></div>
+                          <div>
+                            <p className="mb-0 result-search-card-icon-p1 px-2">Total Area</p>
+                            <p className="mt-0 result-search-card-icon-p2 px-2">891 sqft</p>
+                          </div>
+                        </div>
+                        <div className="d-flex col-4">
+                          <div><RiDragMoveLine className="result-search-card-icon1"/></div>
+                          <div>
+                            <p className="mb-0 result-search-card-icon-p1 px-2">Total Area</p>
+                            <p className="mt-0 result-search-card-icon-p2 px-2">891 sqft</p>
+                          </div>
+                        </div>
+                        <div className="d-flex col-4">
+                          <div><PiSpinnerGap className="result-search-card-icon1"/></div>
+                          <div>
+                            <p className="mb-0 result-search-card-icon-p1 px-2">Total Area</p>
+                            <p className="mt-0 result-search-card-icon-p2 px-2">891 sqft</p>
+                          </div>
+                        </div>
                     </div>
                     
                 </div>
