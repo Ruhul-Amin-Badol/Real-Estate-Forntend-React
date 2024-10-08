@@ -651,4 +651,64 @@ text-align: left;
 
   
 }
+/*home loan card css start*/
+.loan-card {
+  font-family: 'Montserrat', sans-serif;
+  padding: 35px;
+  height: 148px;
+  border-radius: 8px;
+  background-color: #ECF5FF;
+}
 
+.slider {
+  -webkit-appearance: none; /* Override default CSS styles */
+  appearance: none;
+  width: 100%;
+  height: 10px;
+  border-radius: 5px;
+  outline: none;
+  
+}
+
+/* Track */
+.slider::-webkit-slider-runnable-track {
+  height: 15px;
+  border-radius: 5px;
+}
+
+.slider::-moz-range-track {
+  height: 15px;
+  border-radius: 5px;
+}
+
+/* Thumb (handle) */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: rgba(240, 103, 17, 1);  /* Color for the thumb */
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: -3px; /* Center the thumb vertically */
+}
+
+.slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: rgba(240, 103, 17, 1); 
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: -3px; /* Center the thumb vertically */
+}
+.loan-amount {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.loan-amount span {
+  font-size: 14px;
+}
+
+/*home loan card css end*/

@@ -9,7 +9,7 @@ import PropertySlider from '../../component/PropertySlider';
 import NewListProduct from '../../component/NewListProduct';
 import Testimonials from '../../component/Testimonials';
 import Footer from "../../component/footer";
-import BuyerSearchResult from '../../component/BuyerSearchResult';
+import BuyerSearchResult from './BuyerSearchResult';
 
 
 const BuyerSearch = () => {
