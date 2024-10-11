@@ -9,11 +9,18 @@ import { PiRectangleDashedFill } from "react-icons/pi";
 
 import Testimonials from "../../component/Testimonials";
 import HomeLoan from '../../component/HomeLoan';
+import PropertyDetails from './PropertyDetails';
 
 const BuyerSearchResult = () => {
+  const[showProjectDetails, SetshowProjectDetails] = useState(false);
+  const handaleShowProjectDetails =() =>{
+    SetshowProjectDetails(true);
+  }
 
   return (
-    <div>
+    <>
+        {!showProjectDetails ?(
+          <div>
         <div className="container">
       <div className="d-flex pt-5">
         <div className="buyerresultbutton m-2 text-light primary-text">
@@ -44,7 +51,10 @@ const BuyerSearchResult = () => {
             <div className="col-9">
                 <div className="d-flex primary-text ">
                     <div>
-                        <p className="result-search-card-p1">3 BHK Builder Floor for Sale in Site Ram Bazar New Delhi</p>
+                        <p className="result-search-card-p1"
+                            onClick={handaleShowProjectDetails}
+                            style={{cursor:"pointer"}}
+                        >3 BHK Builder Floor for Sale in Site Ram Bazar New Delhi</p>
                         <p className="result-search-card-p2"><CiLocationOn style={{ color: '#f06711' }} />Meadowshire Park, Greenfield, USA</p>
                     </div>
                     <div>
@@ -91,7 +101,12 @@ const BuyerSearchResult = () => {
       <HomeLoan/>
       <Testimonials />
       <Footer />
-    </div>
+      </div>
+        ):(
+
+          <PropertyDetails/>
+  )}
+    </>
   );
 };
 
