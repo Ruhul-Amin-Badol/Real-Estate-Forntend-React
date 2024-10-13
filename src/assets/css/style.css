@@ -775,7 +775,7 @@ text-align: left;
 
 /*property details image gallery end */
 
-/*property details card start */
+/*property bid card start */
 
 .property-bid-card {
   background-color: #e6f2ff;
@@ -827,5 +827,166 @@ text-align: left;
   border: 1px solid #ccc;
   border-radius: 5px;
 }
+.range-slider {
+  margin: 10px 0;
+  width: 100%; /* Ensure it takes full width */
+}
+.range-line{
+    background-color: "#EE6611"; 
+    border-color: "#007bff";
+    
+  
+}
+/* Customize the slider rail (the track) */
+.range-line .rc-slider-rail {
+  background-color: #f3d1bd; 
+  height: 10px; 
+}
+/* Customize the slider track (the filled part of the range) */
+.range-line .rc-slider-track {
+  background-color: #EE6611; 
+  height: 10px; 
+}
+/* Customize the handles (the draggable knobs) */
+.range-line .rc-slider-handle {
+  border: 2px solid #EE6611; 
+  height: 22px;
+  width: 22px;
+  background-color:#faf7f6;
+  margin-top: -7px; 
+}
+/* Handle hover and focus states */
+.range-line .rc-slider-handle:hover,
+.range-line .rc-slider-handle:focus {
+  border-color: #EE6611; 
+}
+
+/* Handle active state */
+.range-line .rc-slider-handle:active { 
+  border-color: #ff4500; 
+  background-color: #ff4500;
+}
+.range-line .rc-slider-handle-dragging{ 
+  border-color: #f9f9fa !important; 
+  background-color: #ff4500 !important;
+}
+.range-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  color: #666;
+}
+.bid-button {
+  background-color: #0059B1;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+
+  
+}
+
+.bid-button:hover {
+  background-color: #0056b3;
+}
+
+/*map locationa */
+.map-value h5 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+  color: #6B7280;
+
+}
+
+/*property bid card end */
+
+
+/*property details card start */
+
+.property-details-card{
+  padding: 24px ;
+  gap: 32px;
+  border-radius: 8px ;
+  border: 1px ;
+  opacity: 0px;
+  background-color: #F9FAFB;
+
+
+}
+.property-details-card h4{
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28px;
+  text-align: left;
+  color: #000000;
+  
+}
+.property-details-card .details1{
+  
+  border: 0px 0px 1px 0px;
+  opacity: 0px;
+  background-color: #FFFFFF;
+
+}
+.property-details-card  p{
+  
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  color: #5C5C5C;
+}
+.property-details-card  h6{
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  color:  #101010;
+  ;
+
+  
+}
 
 /*property details card end */
+
+/*amenities-main  card start */
+.amenities-main{
+  padding: 24px ;
+  gap: 32px;
+  border-radius: 8px ;
+  border: 1px;
+  opacity: 0px;
+  background-color: #F9FAFB;
+
+
+}
+.amenities-main h4{
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28px;
+  text-align: left;
+  color: #000000;
+
+}
+
+.amenities-main p{
+  padding-top: 30px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  color: #101010;
+
+}
+
+/*amenities-main  card end */
+

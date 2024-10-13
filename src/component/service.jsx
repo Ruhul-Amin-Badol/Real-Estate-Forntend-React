@@ -6,9 +6,9 @@ import { FcGallery } from "react-icons/fc";
 const service = () => {
   return (
     <>
-      <div className="container mb-5">
+      <div className="container mb-5 mt-5">
         <div className="pt-3 pb-5">
-          <p className="text-center card-h ">Our Services</p>
+          <p className="text-center card-h ">Other Services</p>
         </div>
         <div className="row card-m">
           <div className="col-4">

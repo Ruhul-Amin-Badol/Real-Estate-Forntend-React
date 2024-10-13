@@ -6,7 +6,7 @@ import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn, FaYoutube } from 're
 const footer = () => {
   return (
     <>
-    <div className="footer-main">
+    <div className="footer-main mt-5">
       <div className="container  mt-5">
         <div className="row">
           <div className="col-4">
