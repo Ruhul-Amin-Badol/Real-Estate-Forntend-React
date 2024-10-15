@@ -12,6 +12,7 @@ import Service from "./component/service";
 import Footer from "./component/footer";
 import Register from "./component/Register";
 import Dashboard from "./component/Dashboard";
+import About from "./assets/pages/About";
 
 
 const App = () => {
@@ -21,6 +22,7 @@ const App = () => {
       <Routes>
         <Route path="/login" element={<Login />} />
         <Route path="/Register" element={<Register />} />
+        <Route path="/about" element={<About/>} />
         <Route path="/dashboard" element={isAuthenticated ? <Dashboard /> : <Navigate to="/login" />} />
         <Route
           path="*"
