@@ -5,7 +5,8 @@ import NewFlatP from "../../component/NewFlatP";
 import NewFlatP2 from "../../component/NewFlatP2";
 import Testimonials from "../../component/Testimonials";
 import Footer from "../../component/footer";
-import productcartimg from "../images/PropertyDetails4.jpg";
+import productcartimg from "../images/aboutimage1.jpg";
+import { MdHorizontalRule } from "react-icons/md";
 
 const About = () => {
   return (
@@ -32,18 +33,33 @@ const About = () => {
             <NewFlatP2 />
           </div>
         </div>
-        <section className="home-section">
-      <div className="image-wrapper">
-        <img src={productcartimg} alt="House Model" className="house-image" />
-        <div className="text-overlay">
-          <h4 className="story-heading">Our Story</h4>
-          <h2 className="main-heading">Efficient and Transparent Home Buying Solutions</h2>
-          <p className="description">
-            In the symphony of bustling markets and serene landscapes, Heritage-Nest was born—a vision to...
-          </p>
+        <div className="mt-5">
+            <div className="row">
+               <div className="col-12">
+               <section className="home-section">
+                <div className="image-wrapper">
+                    <img src={productcartimg} alt="House Model" className="house-image" />
+                    <div className="text-overlay">
+                    {/* <div className="d-flex">
+                    <div>
+                        <hr className="line-9"></hr>
+                        </div>
+                        <div className="p-2 property-text">Property buying</div>
+                    </div> */}
+                    <h4 className="story-heading mb-0 mt-0"><MdHorizontalRule className="text-line"/> Our Story</h4>
+                    <h2 className="main-heading mt-0 ">Efficient and Transparent Home Buying Solutions</h2>
+                    <p className="description">
+                        In the symphony of bustling markets and serene landscapes, Heritage-Nest was born—a vision to...
+                    </p>
+                    </div>
+                </div>
+                </section>
+               </div>
+            </div>
+            <br/>
+       
         </div>
-      </div>
-    </section>
+    
       </div>
       <Testimonials/>
       <Footer />

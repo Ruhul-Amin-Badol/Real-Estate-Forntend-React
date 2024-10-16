@@ -4,6 +4,7 @@
     --primary-font: 'Montserrat', sans-serif;
     --primary-color: rgba(240, 103, 17, 1);
     --secondary-color: rgba(0, 81, 161, 1);
+    --third-color: rgba(236, 245, 255, 1);
   }
   .primary-text {
     font-family: var(--primary-font);
@@ -992,9 +993,8 @@ text-align: left;
 
 /*about-main  Start */
 .home-section {
-  position: relative;
   width: 100%;
-  height: 500px; /* Adjust the height as necessary */
+  height: 100%;
 }
 
 .image-wrapper {
@@ -1004,23 +1004,33 @@ text-align: left;
 }
 
 .house-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  width: 820px;
+  height: 455px;
+  top: 721px;
+  left: 112px;
+  gap: 0px;
+  opacity: 0px;
+
 }
 
 .text-overlay {
   position: absolute;
-  bottom: 20px; /* Adjust based on how high you want the text from the bottom */
-  left: 20px;
-  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
-  padding: 20px;
-  max-width: 400px;
+  bottom: -100px; /* Adjust based on how high you want the text from the bottom */
+  left: 515px;
+  background-color:  var(--third-color);
+  padding: 25px;
+  width: 592px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for effect */
+
+
+}
+.text-line {
+  font-size: x-large;
+  color: var(--primary-color);
 }
 
 .story-heading {
-  color: #d57a20; /* Match color to design */
+  color: var(--primary-color); /* Match color to design */
   font-size: 1rem;
   font-weight: bold;
 }
