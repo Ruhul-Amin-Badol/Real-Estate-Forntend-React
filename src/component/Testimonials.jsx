@@ -55,7 +55,7 @@ const Testimonials = () => {
     
       return (
         <div className="testimonials-section">
-          <h2 className="section-title">Testimonials</h2>
+          <h2 className="section-title ">Testimonials</h2>
           <Slider {...settings}>
             {testimonials.map((testimonial) => (
               <div key={testimonial.id} className="testimonial-card">
