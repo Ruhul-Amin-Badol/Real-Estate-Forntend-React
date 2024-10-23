@@ -24,27 +24,75 @@
     font-family: var(--primary-font);
   }
 
-.custom-navbar {
-    width: 1440px;
-    height: 96px;
-    padding: 0px 112px;
+  /*navber start */
+
+  .custom-navbar {
+    height: 100px;
     background-color: #ECF5FF;
     box-shadow: rgba(0, 20, 38, 0.12);
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
-    font-weight: 400;
-    line-height: 27px;
-    text-align: left;
+    font-weight: 500;
     color: rgba(0, 0, 0, 1);
-    gap: 32px;
+    padding: 10px;
   }
+  
+  /* Ensure the logo stays centered */
+  .navbar-logo-container {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  /* Adjust logo size */
   .navbar-logo {
-    width: 53.29px;
+    width: 53px;
     height: 80px;
-    gap: 0px;
-    opacity: 0px;
-   
   }
+  
+  .nav-item:hover {
+    color: var(--primary-color) !important;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 991.98px) {
+    .navbar-logo {
+      width: 40px;
+      height: 60px;
+    }
+  
+    .navbar-nav {
+      text-align: center;
+      padding: 10px 0;
+    }
+  
+    /* Adjust the navbar padding */
+    .custom-navbar {
+      padding: 0px 25px;
+    }
+  }
+  
+  @media (max-width: 767.98px) {
+    .navbar-logo {
+      width: 35px;
+      height: 50px;
+    }
+  
+    /* Stack the nav items vertically on smaller screens */
+    .navbar-nav {
+      text-align: center;
+      margin-top: 10px;
+    }
+  
+    /* Adjust navbar logo container */
+    .navbar-logo-container {
+      position: relative;
+      left: 0;
+      transform: none;
+    }
+  }
+
+  /*navber end */
 
   .hero-container {
     position: relative;

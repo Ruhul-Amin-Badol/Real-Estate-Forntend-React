@@ -1,9 +1,6 @@
 import React from 'react'
 import Testimonial1 from "../assets/images/testimonial1.jpg";
 import Productcart3 from "../assets/images/prductcart3.jpg";
-import { PiRectangleFill } from "react-icons/pi";
-import { CiLocationOn } from "react-icons/ci";
-import { BiSolidImage } from "react-icons/bi";
 import { MdGrade,MdOutlineGrade } from "react-icons/md";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";

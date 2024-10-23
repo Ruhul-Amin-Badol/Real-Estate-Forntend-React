@@ -102,6 +102,7 @@ const BuyerSearchResult = () => {
       <Testimonials />
       <Footer />
       </div>
+      
         ):(
 
           <PropertyDetails/>
