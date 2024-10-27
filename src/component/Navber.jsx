@@ -1,6 +1,7 @@
 import React from "react";
 import haritage from "../assets/images/haritage.png";
 import logo1 from "../assets/images/logo1.png";
+import { RiLogoutCircleRLine } from "react-icons/ri";
 import {
   BrowserRouter as Router,
   Route,
@@ -20,8 +21,8 @@ function Navber() {
   };
 
   return (
-    <nav className="navbar navbar-expand-lg custom-navbar">
-      <div className="container-fluid">
+    <nav className="navbar navbar-expand-lg custom-navbar sticky-top">
+      <div className="container-fluid p-3  ">
         {/* Logo in the center */}
         <div className="navbar-logo-container d-flex justify-content-center">
           <Link className="navbar-brand" to="/">
@@ -44,7 +45,7 @@ function Navber() {
 
         <div className="collapse navbar-collapse" id="navbarNav">
           {/* Left Menu */}
-          <ul className="navbar-nav me-auto">
+          <ul className="navbar-nav me-auto px-5">
             <li className="nav-item">
               <Link className="nav-link" to="/">
                 Buy
@@ -63,7 +64,7 @@ function Navber() {
           </ul>
 
           {/* Right Menu */}
-          <ul className="navbar-nav ms-auto">
+          <ul className="navbar-nav ms-auto px-5">
             <li className="nav-item">
               <Link className="nav-link" to="/productsList">
                 Manage Rentals
@@ -82,10 +83,10 @@ function Navber() {
               </li>
             )}
             {isAuthenticated && (
-              <li className="nav-item">
-                <button className="btn btn-danger" onClick={handleLogout}>
-                  Logout
-                </button>
+              <li className="nav-item py-1 ">
+                <span className="px-3 my-2" onClick={handleLogout}>
+                <RiLogoutCircleRLine className="logout-icon"/> 
+                </span>
               </li>
             )}
           </ul>

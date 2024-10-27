@@ -27,7 +27,7 @@
   /*navber start */
 
   .custom-navbar {
-    height: 100px;
+    height: 100%;
     background-color: #ECF5FF;
     box-shadow: rgba(0, 20, 38, 0.12);
     font-family: 'Montserrat', sans-serif;
@@ -50,8 +50,16 @@
     height: 80px;
   }
   
-  .nav-item:hover {
+  .nav-link:hover {
     color: var(--primary-color) !important;
+  }
+  .logout-icon{
+    
+    font-weight: 900;
+    color:var(--primary-color);
+  }
+  .logout-icon:hover{
+    color:#dd0404;
   }
   
   /* Responsive adjustments */
@@ -94,47 +102,39 @@
 
   /*navber end */
 
+   /*hero section start */
+
   .hero-container {
     position: relative;
-    height: 100vh; /* Adjust based on your design */
+    height: 100vh;
     overflow: hidden;
     display: flex;
     justify-content: center;
+    align-items: center;
+    text-align: center;
   }
   
   .hero-video {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: auto;
-    transform: translate(-50%, -50%);
-    z-index: -1; /* Ensures the video stays behind the content */
-    object-fit: cover; /* Ensures the video covers the entire section */
-    gap: 0px;
-    opacity: 0px;
-    zoom: 5%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
 
   }
   
   .hero-content {
-    position: relative;
-    z-index: 1;
+   
     text-align: center;
-    color: white;
-    top: 35%;
-    transform: translateY(-50%);
-    gap: 0px;
-    opacity: 0px;
-    font-family: 'Montserrat', sans-serif;
     font-size: 64px;
     font-weight: 700;
     line-height: 72px;
     letter-spacing: -0.02em;
-    width: 696px;
-    height: 144px;
+    z-index: 1;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
     
   }
 
@@ -146,6 +146,19 @@
     text-align: center;
 
   }
+
+   /*hero section end */
+
+  /*Search Form section start */
+  
+  @media (max-width: 767.98px ){
+    .search-main-card{
+      margin-top: -85px !important;
+    }
+    }
+  
+  /*Search Form section end */
+
   .FindButton1{
     width: 210px;
     height: 56px;

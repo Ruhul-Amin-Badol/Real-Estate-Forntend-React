@@ -31,7 +31,7 @@ const BuyerSearch = () => {
         </div>
         <div className="row justify-content-center mt-4 primary-text">
           <div className="col-8">
-            <div className="card mx-auto shadow-lg" style={{ marginTop: '-150px' }}>
+            <div className="card mx-auto shadow-lg search-main-card" style={{ marginTop: '-150px' }}>
               <div className="card-body">
                 {/* Navbar inside the card */}
                 <nav className="navbar navbar-expand-lg  ">
