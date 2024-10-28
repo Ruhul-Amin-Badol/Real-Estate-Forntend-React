@@ -4,7 +4,7 @@ import { BsArrowDownCircle } from "react-icons/bs";
 const NewFlatP2 = () => {
   return (
     <div>
-       <div>
+       
       <div className=" newflat2 shadow-lg">
         <div className="">
           {/* Bold and colored text */}
@@ -23,7 +23,7 @@ const NewFlatP2 = () => {
         </div>
       </div>
     </div>
-    </div>
+   
   )
 }
 

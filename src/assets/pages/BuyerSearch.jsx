@@ -163,13 +163,21 @@ const BuyerSearch = () => {
           </div>
         </div>
         <div className="container">
-        <div className="row mt-5 ">
-          <div className="col-3"><NewFlatP/></div>
-          <div className="col-3"><NewFlatP2/></div>
-          <div className="col-3"><NewFlatP/></div>
-          <div className="col-3"><NewFlatP2/></div>
+      <div className="row mt-5">
+        <div className="col-sm-12 col-md-6 col-lg-3 mb-3">
+          <NewFlatP />
         </div>
-        </div> 
+        <div className="col-sm-12 col-md-6 col-lg-3 mb-3">
+          <NewFlatP2 />
+        </div>
+        <div className="col-sm-12 col-md-6 col-lg-3 mb-3">
+          <NewFlatP />
+        </div>
+        <div className="col-sm-12 col-md-6 col-lg-3 mb-3">
+          <NewFlatP2 />
+        </div>
+      </div>
+    </div>
         <div>
           <PropertySlider/>
           <NewListProduct/>

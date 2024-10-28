@@ -4,7 +4,7 @@ import { BsArrowDownCircle } from "react-icons/bs"; // Import the circular arrow
 const NewFlatP = () => {
   return (
     <div>
-      <div className=" newflat shadow-lg">
+      <div className="newflat shadow-lg">
         <div className="">
           {/* Bold and colored text */}
           <p style={{fontSize:'26px' }} className='m-0 fw-bold primary-color'>2K+</p>
