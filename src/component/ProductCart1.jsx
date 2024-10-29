@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Productcart1 from "../assets/images/ProductCart1.jpg";
 import Productcart2 from "../assets/images/luxury.jpg";
 import Productcart3 from "../assets/images/prductcart3.jpg";
@@ -10,6 +10,13 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const ProductCart1 = () => {
+  const [sliderKey, setSliderKey] = useState(0);
+
+  useEffect(() => {
+    const handleResize = () => setSliderKey((prevKey) => prevKey + 1);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const productData = [
     {
@@ -39,13 +46,40 @@ const ProductCart1 = () => {
     
   ];
   const settings = {
+    key: sliderKey,
     dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
+    initialSlide: 0,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,  // Set this to 2 to avoid potential conflicts
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
   return (
     <div className="ProductCarousel-main">

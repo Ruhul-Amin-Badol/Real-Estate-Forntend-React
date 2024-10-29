@@ -412,6 +412,9 @@
 /* Propertyslide styling end */
 
 /* ProductCart1 styling start */
+.ProductCarousel-main {
+  width: 100%; /* Ensure it scales with screen size */
+}
 .ProductCart1-main{
   width:  100%;
   height: 388px;
