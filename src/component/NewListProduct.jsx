@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from "react";
 import Productcart1 from "../assets/images/ProductCart1.jpg";
 import Productcart2 from "../assets/images/luxury.jpg";
 import Productcart3 from "../assets/images/prductcart3.jpg";
@@ -10,6 +10,15 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const NewListProduct = () => {
+
+  const [sliderKey, setSliderKey] = useState(0);
+
+  useEffect(() => {
+    const handleResize = () => setSliderKey((prevKey) => prevKey + 1);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
     const productData = [
         {
           id: 1,
@@ -38,6 +47,7 @@ const NewListProduct = () => {
         
       ];
       const settings = {
+        key:sliderKey,
         dots: true,
         infinite: true,
         speed: 500,
@@ -45,6 +55,31 @@ const NewListProduct = () => {
         slidesToScroll: 1,
         nextArrow: <NextArrow />,
         prevArrow: <PrevArrow />,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 3,  // Set this to 2 to avoid potential conflicts
+              slidesToScroll: 1,
+              infinite: true,
+              dots: true,
+            },
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            },
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            },
+          },
+        ],
       };
       return (
         <div className="container mt-5">
@@ -88,10 +123,9 @@ const NewListProduct = () => {
                     <p className="productcart-p2 mt-0">
                       <CiLocationOn className="icon" /> {product.location}
                     </p>
+                    <span className="productcart-Budget">{product.price}</span >
                   </div>
-                  <div>
-                    <p className="productcart-Budget">{product.price}</p>
-                  </div>
+                 
                 </div>
               </div>
             ))}
