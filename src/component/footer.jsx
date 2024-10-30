@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import haritage from "../assets/images/haritage.png";
+import logo1 from "../assets/images/logo1.png";
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn, FaYoutube } from 'react-icons/fa';
 import { BsTwitterX } from "react-icons/bs";
 
@@ -12,7 +13,7 @@ const Footer = () => {
           <div className="row">
             <div className="col-lg-4 col-md-6 mb-4">
               <Link className="navbar-brand" to="/">
-                <img src={haritage} alt="logo" className="navbar-logo" />
+                <img src={logo1} alt="logo" className="navbar-logo" />
               </Link>
               <p className="footer-brand mt-2">
                 Design amazing digital experiences that create more happy in the world.
@@ -86,19 +87,19 @@ const Footer = () => {
               <p className="footer-text">© 2024 CodeStationBD. All rights reserved.</p>
             </div>
             <div className="col-md-6 text-md-end">
-              <a href="https://facebook.com" className="footer-icon">
+              <a href="https://facebook.com" className="footer-icon primary-color">
                 <FaFacebookF />
               </a>
-              <a href="https://twitter.com" className="footer-icon mx-2">
+              <a href="https://twitter.com" className="footer-icon mx-2 primary-color">
                 <BsTwitterX />
               </a>
-              <a href="https://instagram.com" className="footer-icon mx-2">
+              <a href="https://instagram.com" className="footer-icon mx-2 primary-color">
                 <FaInstagram />
               </a>
-              <a href="https://linkedin.com" className="footer-icon mx-2">
+              <a href="https://linkedin.com" className="footer-icon mx-2 primary-color">
                 <FaLinkedinIn />
               </a>
-              <a href="https://youtube.com" className="footer-icon mx-2">
+              <a href="https://youtube.com" className="footer-icon mx-2 primary-color">
                 <FaYoutube />
               </a>
             </div>
