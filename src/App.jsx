@@ -1,8 +1,8 @@
-import React from "react";
+import React, { useState, useEffect } from 'react';
 import "./assets/css/style.css";
-import "bootstrap/dist/css/bootstrap.min.css"; // Import Bootstrap
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';  // This includes Popper.js and Bootstrap JS
-import { BrowserRouter as Router, Route, Routes,Navigate } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css";
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom";
 import Login from "./component/login";
 import Navber from "./component/Navber";
 import Hero from "./component/hero";
@@ -15,15 +15,24 @@ import Register from "./component/Register";
 import Dashboard from "./component/Dashboard";
 import About from "./assets/pages/About";
 
-
 const App = () => {
-  const isAuthenticated = !!localStorage.getItem('token');
+  const [isAuthenticated, setIsAuthenticated] = useState(!!localStorage.getItem('token'));
+
+  useEffect(() => {
+    const checkAuth = () => setIsAuthenticated(!!localStorage.getItem('token'));
+    window.addEventListener("storage", checkAuth);
+
+    return () => {
+      window.removeEventListener("storage", checkAuth);
+    };
+  }, []);
+
   return (
     <Router>
       <Routes>
-        <Route path="/login" element={<Login />} />
+        <Route path="/login" element={<Login setIsAuthenticated={setIsAuthenticated} />} />
         <Route path="/Register" element={<Register />} />
-        <Route path="/about" element={<About/>} />
+        <Route path="/about" element={<About />} />
         <Route path="/dashboard" element={isAuthenticated ? <Dashboard /> : <Navigate to="/login" />} />
         <Route
           path="*"

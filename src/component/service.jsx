@@ -12,13 +12,13 @@ const service = () => {
         </div>
         <div className="row card-m">
           <div className="col-4">
-              <div class="card-d d-flex">
+              <div className="card-d d-flex">
                 <div>
                   <FcBriefcase size={35} />
                 </div>
                 <div>
-                  <h5 class="card-t"> Advanced Property Search</h5>
-                  <p class="card-subtitle mb-2 text-muted card-p">
+                  <h5 className="card-t"> Advanced Property Search</h5>
+                  <p className="card-subtitle mb-2 text-muted card-p">
                     Effortlessly find your dream property with advanced search
                     filters.
                   </p>
@@ -27,26 +27,26 @@ const service = () => {
             
           </div>
           <div className="col-4">
-              <div class="card-d d-flex">
+              <div className="card-d d-flex">
                 <div>
                 <FcGallery  size={35} />
                 </div>
                 <div>
-                  <h5 class="card-t"> Virtual Tours and Multimedia</h5>
-                  <p class="card-subtitle mb-2 text-muted card-p">
+                  <h5 className="card-t"> Virtual Tours and Multimedia</h5>
+                  <p className="card-subtitle mb-2 text-muted card-p">
                   Explore properties through immersive virtual tours and HD photos.
                   </p>
                 </div>
               </div>
             </div>
           <div className="col-4">
-              <div class="card-d d-flex">
+              <div className="card-d d-flex">
                 <div>
                   <FcPrivacy  size={35} />
                 </div>
                 <div>
-                  <h5 class="card-t"> Secure Online Transactions</h5>
-                  <p class="card-subtitle mb-2 text-muted card-p">
+                  <h5 className="card-t"> Secure Online Transactions</h5>
+                  <p className="card-subtitle mb-2 text-muted card-p">
                   Ensure secure transactions and e-sign documents seamlessly online.
                   </p>
               </div>

@@ -1,11 +1,9 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { apiserverpoint } from "./apiserverpoint";
-import { useNavigate , Link } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
-
-
-const Login = () => {
+const Login = ({ setIsAuthenticated }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
@@ -17,10 +15,17 @@ const Login = () => {
       const response = await axios.post(`${apiserverpoint}/api/login`, {
         email,
         password,
-      }); 
+      });
       console.log("Login successful", response.data);
-       // Save the token to local storage or state management
+
+      // Save token to localStorage
       localStorage.setItem('token', response.data.token);
+
+      // Update authentication status
+      setIsAuthenticated(true);
+
+      // Navigate to dashboard
+      console.log("Navigating to dashboard...");
       navigate("/dashboard");
     } catch (error) {
       setError("Login failed. Please check your credentials.");
@@ -57,12 +62,11 @@ const Login = () => {
                 </div>
                 {error && <p className="text-danger">{error}</p>}
                 <p className="text-center">
-                <button type="submit" className="btn btn-info text-light btn-block mt-2 w-50 ">
-                  Login
-                </button>
+                  <button type="submit" className="btn btn-info text-light btn-block mt-2 w-50 ">
+                    Login
+                  </button>
                 </p>
                 <p className="text-center footer-text">Do not have an account? <Link className="footer-text fw-bold" to="/Register">Sign Up</Link></p>
-              
               </form>
             </div>
           </div>
